@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+.bg-gradient {
+  background-color: #0f0e13;
+  background-image: linear-gradient(
+    to right,
+    rgb(11, 20, 38) 0%,
+    rgb(1, 8, 22) 100%
+  );
+}
+
+.bg-gradient-crousel {
+  background: linear-gradient(
+    90deg,
+    rgb(17, 153, 250) 0%,
+    rgb(17, 208, 250) 100%
+  );
+  filter: blur(32px);
+}
+
+.slider {
+  background-image: linear-gradient(
+    189.56deg,
+    rgba(0, 0, 0, 0.35) 14.53%,
+    rgba(0, 0, 0, 0.71) 79.27%
+  );
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  z-index: 999;
+  opacity: 0.6;
+}
+
+.fadeout {
+  animation: fade 4s infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+}
